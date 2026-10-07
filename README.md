@@ -28,8 +28,8 @@ Users who need to manage their finances and wish to begin budgeting in a simple-
 - Alert user when spending threshold is approached
 ## Planned Screens
  
-1. Transaction Overview/Dashboard
-2. Budgeting Plan Overview/Selection
-3. Transaction History List
-4. Transaction Input
-5. Profile
+1. Main Page
+2. Transaction Overview/Dashboard
+3. Budgeting Plan Overview/Selection
+4. Transaction History List
+5. Transaction Input
