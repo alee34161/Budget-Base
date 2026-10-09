@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V7a-RC-XLk">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
@@ -28,70 +28,42 @@
             <objects>
                 <viewController title="Overview" id="Tov-VC-001" customClass="OverviewViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tov-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-HM-7B8">
-                                <rect key="frame" x="160" y="138" width="72" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola ${name}!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-HM-7B8">
+                                <rect key="frame" x="160" y="138" width="109" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWJ-b1-tsD">
-                                <rect key="frame" x="157" y="408" width="79" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track your financials overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12C-Ty-0Zf">
+                                <rect key="frame" x="100" y="179" width="228" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="History"/>
-                                <connections>
-                                    <segue destination="Thi-VC-001" kind="show" id="5BI-Wq-gyo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-mi-qdb">
-                                <rect key="frame" x="185" y="292" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Budget Plan"/>
-                                <connections>
-                                    <segue destination="Bpl-VC-001" kind="show" id="Q2u-JW-bfY"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tov-Sa-001"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Overview" image="chart.pie" catalog="system" id="8Cp-3K-vxJ"/>
                     <navigationItem key="navigationItem" id="5QZ-Gu-UHK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tov-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741.2213740458014" y="94.366197183098592"/>
+            <point key="canvasLocation" x="2667.93893129771" y="94.366197183098592"/>
         </scene>
         <!--Transaction History-->
         <scene sceneID="Thi-Sc-001">
             <objects>
                 <viewController title="Transaction History" id="Thi-VC-001" customClass="TransactionHistoryViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Thi-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zP4-Vj-1XV">
-                                <rect key="frame" x="111" y="307" width="96" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Overview"/>
-                                <connections>
-                                    <segue destination="Tov-VC-001" kind="show" id="uo5-pJ-3Cw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="uqb-Rw-Ofh">
-                                <rect key="frame" x="138" y="409" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Budget Plan"/>
-                                <connections>
-                                    <segue destination="Bpl-VC-001" kind="show" id="t6m-C4-lfr"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqS-59-NwN">
                                 <rect key="frame" x="122" y="116" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,58 +75,41 @@
                         <viewLayoutGuide key="safeArea" id="Thi-Sa-001"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="History" image="clipboard" catalog="system" id="0X8-B6-mtD"/>
                     <navigationItem key="navigationItem" id="M1E-Tw-nWB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thi-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741.2213740458014" y="94.366197183098592"/>
+            <point key="canvasLocation" x="3667.9389312977096" y="94.366197183098592"/>
         </scene>
         <!--Budget Plan-->
         <scene sceneID="Bpl-Sc-001">
             <objects>
                 <viewController title="Budget Plan" id="Bpl-VC-001" customClass="BudgetPlanViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpl-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Bpl-Su-001" userLabel="Plan Setup View">
-                                <rect key="frame" x="0.0" y="160" width="393" height="623"/>
+                                <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Bpl-Ft-001" userLabel="Fifty Thirty Twenty View">
-                                <rect key="frame" x="0.0" y="160" width="393" height="623"/>
+                            <view hidden="YES" contentMode="scaleToFill" id="Bpl-Ft-001" userLabel="Fifty Thirty Twenty View">
+                                <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Bpl-Zb-001" userLabel="Zero Based View">
-                                <rect key="frame" x="0.0" y="160" width="393" height="623"/>
+                            <view hidden="YES" contentMode="scaleToFill" id="Bpl-Zb-001" userLabel="Zero Based View">
+                                <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Bpl-Py-001" userLabel="Pay Yourself First View">
-                                <rect key="frame" x="0.0" y="160" width="393" height="623"/>
+                            <view hidden="YES" contentMode="scaleToFill" id="Bpl-Py-001" userLabel="Pay Yourself First View">
+                                <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="c0Y-p4-aF2">
-                                <rect key="frame" x="115" y="302" width="79" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="History"/>
-                                <connections>
-                                    <segue destination="Thi-VC-001" kind="show" id="sxk-Bg-1GF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="bd5-vj-NBJ">
-                                <rect key="frame" x="149" y="408" width="96" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Overview"/>
-                                <connections>
-                                    <segue destination="Tov-VC-001" kind="show" id="gLf-LL-5xt"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budget Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFn-Do-3Jo">
                                 <rect key="frame" x="164" y="123" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -166,21 +121,43 @@
                         <viewLayoutGuide key="safeArea" id="Bpl-Sa-001"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Budget Plan" image="chart.line.uptrend.xyaxis" catalog="system" id="wgw-lO-hSt"/>
                     <navigationItem key="navigationItem" id="4Rd-gy-saY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpl-Fr-001" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741.2213740458014" y="94.366197183098592"/>
+            <point key="canvasLocation" x="4667.93893129771" y="94.366197183098592"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NWO-2Z-0a5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="V7a-RC-XLk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wJS-pG-0xv"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u8w-w8-9tx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tov-VC-001" kind="relationship" relationship="viewControllers" id="HVQ-kF-twL"/>
+                        <segue destination="Thi-VC-001" kind="relationship" relationship="viewControllers" id="dx9-Mf-t9C"/>
+                        <segue destination="Bpl-VC-001" kind="relationship" relationship="viewControllers" id="hER-j0-J8w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZg-bL-l9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.2213740458014" y="94.366197183098592"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Q2u-JW-bfY"/>
-        <segue reference="sxk-Bg-1GF"/>
-        <segue reference="gLf-LL-5xt"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="chart.line.uptrend.xyaxis" catalog="system" width="128" height="106"/>
+        <image name="chart.pie" catalog="system" width="128" height="128"/>
+        <image name="clipboard" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
