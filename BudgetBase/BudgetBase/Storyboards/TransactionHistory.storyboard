@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,16 +17,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8D-t6-Lxd">
-                                <rect key="frame" x="122" y="116" width="148" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8D-t6-Lxd">
+                                <rect key="frame" x="91.333333333333329" y="20" width="210.66666666666669" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleAspectFit" id="7kS-BE-vln" userLabel="Filter Section">
+                                <rect key="frame" x="20" y="157" width="353" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="nts-wu-s8q">
+                                        <rect key="frame" x="123" y="10" width="68" height="9.6666666666666643"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h6X-ux-szF">
+                                        <rect key="frame" x="20" y="29" width="77" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <menu key="menu" title="Transaction Types" id="JjZ-wd-eYh">
+                                            <children>
+                                                <command title="All Transactions" id="dwg-vI-Dpj"/>
+                                                <command title="Expense" id="ZcF-HZ-ip3"/>
+                                                <command title="Income" id="Nwx-xV-thN"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="WJX-y8-NBe">
+                                        <rect key="frame" x="20" y="10" width="20" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="87p-yw-b0i"/>
+                                            <constraint firstAttribute="height" constant="10" id="v7l-Yr-5e1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-EN-fZl">
+                                        <rect key="frame" x="123" y="29" width="68" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <menu key="menu" title="Transaction Types" id="ifb-Qn-EaV">
+                                            <children>
+                                                <command title="All Categories" id="l4C-kX-Rtz"/>
+                                                <command title="Food" id="D8p-g2-5tt"/>
+                                                <command title="Bills" id="6Um-ZD-jkZ"/>
+                                                <command title="Entertainment" id="0Ym-Xv-keM"/>
+                                                <command title="etc add later" id="oGp-9t-cDR"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sort By" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="orj-Ml-l4K">
+                                        <rect key="frame" x="233" y="10" width="29.333333333333314" height="9.6666666666666643"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhB-pg-wPy">
+                                        <rect key="frame" x="233" y="29" width="94" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <menu key="menu" title="Transaction Types" id="Jo3-Iq-Bts">
+                                            <children>
+                                                <command title="Date (Newest First)" discoverabilityTitle="" id="lfV-ra-WvF"/>
+                                                <command title="Date (Oldest First)" id="KFe-1D-IKX"/>
+                                                <command title="Amount (Highest First)" id="Lwq-kK-gK1"/>
+                                                <command title="Amount (Lowest First)" id="9AL-Ge-cCb"/>
+                                                <command title="etc add later" id="Kxp-mU-evY"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="nQ8-Im-qL4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="h6X-ux-szF" firstAttribute="leading" secondItem="nQ8-Im-qL4" secondAttribute="leading" constant="20" id="4lw-B3-Cu8"/>
+                                    <constraint firstItem="WJX-y8-NBe" firstAttribute="top" secondItem="nQ8-Im-qL4" secondAttribute="top" constant="10" id="NNG-CW-IOA"/>
+                                    <constraint firstItem="JYv-EN-fZl" firstAttribute="centerX" secondItem="7kS-BE-vln" secondAttribute="centerX" id="QCt-br-U4X"/>
+                                    <constraint firstItem="orj-Ml-l4K" firstAttribute="top" secondItem="nQ8-Im-qL4" secondAttribute="top" constant="10" id="UKa-q6-S8V"/>
+                                    <constraint firstItem="nQ8-Im-qL4" firstAttribute="trailing" secondItem="JhB-pg-wPy" secondAttribute="trailing" constant="20" id="iPa-L1-Kdu"/>
+                                    <constraint firstItem="WJX-y8-NBe" firstAttribute="leading" secondItem="nQ8-Im-qL4" secondAttribute="leading" constant="20" id="stj-Fj-Clu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MRJ-ko-igr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="clipboard" catalog="system" id="Y9W-wr-keA"/>
                     <navigationItem key="navigationItem" id="JXe-Jr-qOE"/>
@@ -37,8 +123,14 @@
     </scenes>
     <resources>
         <image name="clipboard" catalog="system" width="96" height="128"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

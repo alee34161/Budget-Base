@@ -325,7 +325,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b8A-Ax-Ye9"/>
-                        <color key="backgroundColor" red="0.95699999999999996" green="0.96499999999999997" blue="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Overview" image="chart.pie" catalog="system" id="iVy-1Q-usn"/>
                     <navigationItem key="navigationItem" id="HlQ-n4-YVU"/>
@@ -338,6 +338,9 @@
     <resources>
         <image name="Mock Pie Chart" width="532" height="360"/>
         <image name="chart.pie" catalog="system" width="128" height="128"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
