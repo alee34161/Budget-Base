@@ -28,7 +28,7 @@
             <objects>
                 <viewController title="Overview" id="Tov-VC-001" customClass="OverviewViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tov-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-HM-7B8">
@@ -71,7 +71,7 @@
             <objects>
                 <viewController title="Transaction History" id="Thi-VC-001" customClass="TransactionHistoryViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Thi-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zP4-Vj-1XV">
@@ -92,6 +92,13 @@
                                     <segue destination="Bpl-VC-001" kind="show" id="t6m-C4-lfr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqS-59-NwN">
+                                <rect key="frame" x="122" y="116" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Thi-Sa-001"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,7 +114,7 @@
             <objects>
                 <viewController title="Budget Plan" id="Bpl-VC-001" customClass="BudgetPlanViewController" customModule="BudgetBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bpl-Vw-001">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="c0Y-p4-aF2">
@@ -128,6 +135,13 @@
                                     <segue destination="Tov-VC-001" kind="show" id="gLf-LL-5xt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budget Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFn-Do-3Jo">
+                                <rect key="frame" x="164" y="123" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bpl-Sa-001"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,9 +154,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t6m-C4-lfr"/>
-        <segue reference="5BI-Wq-gyo"/>
-        <segue reference="uo5-pJ-3Cw"/>
+        <segue reference="Q2u-JW-bfY"/>
+        <segue reference="sxk-Bg-1GF"/>
+        <segue reference="gLf-LL-5xt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
