@@ -16,30 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="RBP-0t-mog" userLabel="Plan Setup View">
-                                <rect key="frame" x="0.0" y="160" width="393" height="692"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-0t-mog" userLabel="Plan Setup View">
+                                <rect key="frame" x="0.0" y="118" width="393" height="734"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budget Plans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-d3-4Ns">
-                                        <rect key="frame" x="150" y="335" width="101" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-EN-WWr">
+                                        <rect key="frame" x="0.0" y="303" width="393" height="128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-Bw-uzu" userLabel="Details Stack">
+                                                <rect key="frame" x="16" y="16" width="361" height="702"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget Plans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqQ-up-GNX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="702"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dem-62-og1" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tJw-Bw-uzu" firstAttribute="leading" secondItem="IyJ-bW-Cjj" secondAttribute="leading" constant="16" id="0xN-VH-eAG"/>
+                                            <constraint firstItem="IyJ-bW-Cjj" firstAttribute="bottom" secondItem="tJw-Bw-uzu" secondAttribute="bottom" constant="16" id="5vK-oK-5WM"/>
+                                            <constraint firstItem="dem-62-og1" firstAttribute="top" secondItem="IyJ-bW-Cjj" secondAttribute="top" id="BTW-Un-nMe"/>
+                                            <constraint firstItem="tJw-Bw-uzu" firstAttribute="top" secondItem="Wjb-EN-WWr" secondAttribute="top" constant="16" id="MKT-nK-vIL"/>
+                                            <constraint firstItem="dem-62-og1" firstAttribute="leading" secondItem="IyJ-bW-Cjj" secondAttribute="leading" id="YZG-KR-G46"/>
+                                            <constraint firstItem="dem-62-og1" firstAttribute="width" secondItem="7CO-HX-5Ng" secondAttribute="width" id="cuM-v1-iKC"/>
+                                            <constraint firstItem="IyJ-bW-Cjj" firstAttribute="trailing" secondItem="tJw-Bw-uzu" secondAttribute="trailing" constant="16" id="hNQ-iq-ryR"/>
+                                            <constraint firstItem="IyJ-bW-Cjj" firstAttribute="trailing" secondItem="dem-62-og1" secondAttribute="trailing" id="lpC-m0-msa"/>
+                                            <constraint firstItem="IyJ-bW-Cjj" firstAttribute="bottom" secondItem="dem-62-og1" secondAttribute="bottom" id="tep-OC-c6O"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="7CO-HX-5Ng"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="IyJ-bW-Cjj"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Wjb-EN-WWr" firstAttribute="leading" secondItem="RBP-0t-mog" secondAttribute="leading" id="1mT-1f-lXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wjb-EN-WWr" secondAttribute="bottom" id="IRV-tB-PaF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wjb-EN-WWr" secondAttribute="trailing" id="aI9-cZ-rbO"/>
+                                    <constraint firstItem="Wjb-EN-WWr" firstAttribute="top" secondItem="RBP-0t-mog" secondAttribute="top" id="vQG-gA-BGX"/>
+                                </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="OjP-1x-B0c" userLabel="Fifty Thirty Twenty View">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjP-1x-B0c" userLabel="Fifty Thirty Twenty View">
                                 <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="HzM-KB-EjD" userLabel="Zero Based View">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-KB-EjD" userLabel="Zero Based View">
                                 <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="poD-hM-ad0" userLabel="Pay Yourself First View">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poD-hM-ad0" userLabel="Pay Yourself First View">
                                 <rect key="frame" x="0.0" y="160" width="393" height="692"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -47,6 +78,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XcT-vQ-qmd"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RBP-0t-mog" secondAttribute="bottom" id="7OI-10-TTw"/>
+                            <constraint firstItem="RBP-0t-mog" firstAttribute="leading" secondItem="XcT-vQ-qmd" secondAttribute="leading" id="Cw8-cs-oqe"/>
+                            <constraint firstItem="RBP-0t-mog" firstAttribute="trailing" secondItem="XcT-vQ-qmd" secondAttribute="trailing" id="Wr4-70-JDF"/>
+                            <constraint firstItem="RBP-0t-mog" firstAttribute="top" secondItem="XcT-vQ-qmd" secondAttribute="top" id="xML-wP-LXv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Budget Plan" image="chart.line.uptrend.xyaxis" catalog="system" id="gXi-Vm-PZm"/>
                     <navigationItem key="navigationItem" id="e79-Tc-HaY"/>
