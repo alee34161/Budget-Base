@@ -7,15 +7,6 @@
 
 import UIKit
 
-struct Transaction {
-    var isIncome: Bool
-    var amount: Double
-    var date: Date
-    var category: String
-    var description: String
-    var notes: String?
-}
-
 class TransactionInputViewController: UIViewController {
     
     // Outlets
