@@ -23,21 +23,16 @@ class BudgetPlanViewController: UIViewController {
     let plans = ["50/30/20", "Zero-Based", "Pay Yourself First"]
     var selectedPlan = "50/30/20"
 
-    @IBAction func savePlanTapped(_ sender: UIButton) {
-        UserDefaults.standard.set(selectedPlan, forKey: savedPlanKey)
-        showScreen(for: selectedPlan)
-    }
-
     @IBAction func fiftyThirtyTwentyTapped(_ sender: UIButton) {
-        showScreen(for: "50/30/20")
+        choosePlan("50/30/20")
     }
 
     @IBAction func zeroBasedTapped(_ sender: UIButton) {
-        showScreen(for: "Zero-Based")
+        choosePlan("Zero-Based")
     }
 
     @IBAction func payYourselfFirstTapped(_ sender: UIButton) {
-        showScreen(for: "Pay Yourself First")
+        choosePlan("Pay Yourself First")
     }
 
     @IBAction func changePlanTapped(_ sender: UIButton) {
@@ -67,6 +62,13 @@ class BudgetPlanViewController: UIViewController {
             }
         })
         showPlanInputs()
+    }
+
+    func choosePlan(_ plan: String) {
+        selectedPlan = plan
+        UserDefaults.standard.set(plan, forKey: savedPlanKey)
+        setUpPlanMenu()
+        showScreen(for: plan)
     }
 
     func showPlanInputs() {
