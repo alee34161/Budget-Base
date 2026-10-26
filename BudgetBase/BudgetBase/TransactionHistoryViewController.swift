@@ -2,7 +2,7 @@
  Programmer: Andrew Lee
  
  Description:
-    The code for the Transaction History screen in Main.storyboard
+    The code for the Transaction History screen in TransactionHistory.storyboard
  
  */
 import UIKit
@@ -27,6 +27,8 @@ class TransactionHistoryViewController: UIViewController, UITableViewDataSource,
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         guard let header = tableView.tableHeaderView else { return }
+        header.frame.size.width = tableView.bounds.width
+        header.layoutIfNeeded()
         let targetSize = CGSize(width: tableView.bounds.width, height: UIView.layoutFittingCompressedSize.height)
         let height = header.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel).height
         if header.frame.height != height {
@@ -37,9 +39,15 @@ class TransactionHistoryViewController: UIViewController, UITableViewDataSource,
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: true)
         }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

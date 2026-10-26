@@ -506,13 +506,17 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="700" id="FR0-x3-y7t"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="tJw-Bw-uzu" firstAttribute="leading" secondItem="dem-62-og1" secondAttribute="leading" constant="16" id="0xN-VH-eAG"/>
+                                                    <constraint firstItem="tJw-Bw-uzu" firstAttribute="leading" secondItem="dem-62-og1" secondAttribute="leading" constant="16" priority="750" id="0xN-VH-eAG"/>
+                                                    <constraint firstItem="tJw-Bw-uzu" firstAttribute="centerX" secondItem="dem-62-og1" secondAttribute="centerX" id="II4-Hg-SCn"/>
                                                     <constraint firstAttribute="bottom" secondItem="tJw-Bw-uzu" secondAttribute="bottom" constant="16" id="5vK-oK-5WM"/>
                                                     <constraint firstItem="tJw-Bw-uzu" firstAttribute="top" secondItem="dem-62-og1" secondAttribute="top" constant="16" id="MKT-nK-vIL"/>
-                                                    <constraint firstAttribute="trailing" secondItem="tJw-Bw-uzu" secondAttribute="trailing" constant="16" id="hNQ-iq-ryR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tJw-Bw-uzu" secondAttribute="trailing" constant="16" priority="750" id="hNQ-iq-ryR"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -628,7 +632,8 @@
                                                                             <constraint firstItem="72z-Oc-GV9" firstAttribute="leading" secondItem="Odb-fa-kvA" secondAttribute="leading" constant="12" id="SK1-wT-K3l"/>
                                                                             <constraint firstAttribute="trailing" secondItem="72z-Oc-GV9" secondAttribute="trailing" constant="12" id="bWN-Fk-8ac"/>
                                                                             <constraint firstItem="72z-Oc-GV9" firstAttribute="top" secondItem="Odb-fa-kvA" secondAttribute="top" constant="12" id="bZL-c9-USr"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="72z-Oc-GV9" secondAttribute="bottom" constant="12" id="oSH-N3-Rq9"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="72z-Oc-GV9" secondAttribute="bottom" constant="12" id="oSH-N3-Rq9"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="72z-Oc-GV9" secondAttribute="bottom" priority="200" constant="12" id="z01-T7-JTX"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -663,7 +668,8 @@
                                                                             <constraint firstItem="MJJ-zP-Skw" firstAttribute="top" secondItem="gw7-he-ffu" secondAttribute="top" constant="12" id="5M2-Zh-ZYR"/>
                                                                             <constraint firstItem="MJJ-zP-Skw" firstAttribute="leading" secondItem="gw7-he-ffu" secondAttribute="leading" constant="12" id="Y1a-LF-n6t"/>
                                                                             <constraint firstAttribute="trailing" secondItem="MJJ-zP-Skw" secondAttribute="trailing" constant="12" id="a4S-1u-hMF"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="MJJ-zP-Skw" secondAttribute="bottom" constant="12" id="l1A-73-Ezo"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MJJ-zP-Skw" secondAttribute="bottom" constant="12" id="l1A-73-Ezo"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="MJJ-zP-Skw" secondAttribute="bottom" priority="200" constant="12" id="ERr-yJ-wvp"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -672,7 +678,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                 </subviews>
-                                                                <variation key="widthClass=regular" alignment="top" axis="horizontal" spacing="16"/>
+                                                                <variation key="widthClass=regular" axis="horizontal" distribution="fillEqually" spacing="16"/>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBv-cB-KqH" userLabel="Budget Progress Section">
                                                                 <rect key="frame" x="0.0" y="592.33333333333337" width="538" height="182.33333333333337"/>
@@ -698,7 +704,7 @@
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uL-pV-ndJ">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uL-pV-ndJ">
                                                                                                 <rect key="frame" x="343" y="0.0" width="33" height="18"/>
                                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                                                 <color key="textColor" systemColor="systemIndigoColor"/>
@@ -762,7 +768,7 @@
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4I-No-aFc">
+                                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4I-No-aFc">
                                                                                                 <rect key="frame" x="354.66666666666669" y="0.0" width="25" height="18"/>
                                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                                                 <color key="textColor" systemColor="systemIndigoColor"/>
@@ -922,7 +928,8 @@
                                                                         <constraints>
                                                                             <constraint firstItem="PV6-Zu-M8C" firstAttribute="top" secondItem="Sk0-Dr-wUf" secondAttribute="top" constant="12" id="9UU-AF-mPs"/>
                                                                             <constraint firstItem="PV6-Zu-M8C" firstAttribute="leading" secondItem="Sk0-Dr-wUf" secondAttribute="leading" constant="12" id="F5s-Yu-Exj"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="PV6-Zu-M8C" secondAttribute="bottom" constant="12" id="oRi-pf-Wqv"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PV6-Zu-M8C" secondAttribute="bottom" constant="12" id="oRi-pf-Wqv"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="PV6-Zu-M8C" secondAttribute="bottom" priority="200" constant="12" id="3hr-b3-x2c"/>
                                                                             <constraint firstAttribute="trailing" secondItem="PV6-Zu-M8C" secondAttribute="trailing" constant="12" id="oyI-z0-RJZ"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
@@ -970,7 +977,8 @@
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="bottom" secondItem="k8P-80-ZGy" secondAttribute="bottom" constant="12" id="1cQ-8T-EOQ"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k8P-80-ZGy" secondAttribute="bottom" constant="12" id="1cQ-8T-EOQ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="k8P-80-ZGy" secondAttribute="bottom" priority="200" constant="12" id="VFO-Sp-bi1"/>
                                                                             <constraint firstItem="k8P-80-ZGy" firstAttribute="top" secondItem="joP-BU-52z" secondAttribute="top" constant="12" id="7xb-d3-6U4"/>
                                                                             <constraint firstItem="k8P-80-ZGy" firstAttribute="leading" secondItem="joP-BU-52z" secondAttribute="leading" constant="12" id="H7D-9R-LuK"/>
                                                                             <constraint firstAttribute="trailing" secondItem="k8P-80-ZGy" secondAttribute="trailing" constant="12" id="Hq8-kR-Wu5"/>
@@ -982,7 +990,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                 </subviews>
-                                                                <variation key="widthClass=regular" alignment="top" axis="horizontal" spacing="16"/>
+                                                                <variation key="widthClass=regular" axis="horizontal" distribution="fillEqually" spacing="16"/>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PHK-zC-V9q" userLabel="Summary Stack">
                                                                 <rect key="frame" x="0.0" y="678" width="574" height="65.666666666666629"/>
@@ -1663,7 +1671,8 @@
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="u31-Xv-zRn" firstAttribute="leading" secondItem="kNy-Fq-qzu" secondAttribute="leading" constant="12" id="6J8-gd-X05"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="u31-Xv-zRn" secondAttribute="bottom" constant="12" id="xph-ew-zK6"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u31-Xv-zRn" secondAttribute="bottom" constant="12" id="xph-ew-zK6"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="u31-Xv-zRn" secondAttribute="bottom" priority="200" constant="12" id="mxB-Mi-fd5"/>
                                                                             <constraint firstAttribute="trailing" secondItem="u31-Xv-zRn" secondAttribute="trailing" constant="12" id="I0o-C3-PMh"/>
                                                                             <constraint firstItem="u31-Xv-zRn" firstAttribute="top" secondItem="kNy-Fq-qzu" secondAttribute="top" constant="12" id="BvP-b0-jzh"/>
                                                                         </constraints>
@@ -1706,7 +1715,8 @@
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstItem="pfZ-oI-U6S" firstAttribute="leading" secondItem="1FN-oi-JPY" secondAttribute="leading" constant="12" id="Y8q-uL-eeH"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="pfZ-oI-U6S" secondAttribute="bottom" constant="12" id="QuX-2r-j8M"/>
+                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pfZ-oI-U6S" secondAttribute="bottom" constant="12" id="QuX-2r-j8M"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="pfZ-oI-U6S" secondAttribute="bottom" priority="200" constant="12" id="Z4m-VF-P1i"/>
                                                                             <constraint firstAttribute="trailing" secondItem="pfZ-oI-U6S" secondAttribute="trailing" constant="12" id="2iK-dD-jPE"/>
                                                                             <constraint firstItem="pfZ-oI-U6S" firstAttribute="top" secondItem="1FN-oi-JPY" secondAttribute="top" constant="12" id="Qbj-Y7-TkN"/>
                                                                         </constraints>
@@ -1717,7 +1727,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                 </subviews>
-                                                                <variation key="widthClass=regular" axis="horizontal" alignment="top" spacing="16"/>
+                                                                <variation key="widthClass=regular" axis="horizontal" distribution="fillEqually" spacing="16"/>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-If-1CY" userLabel="Savings Summary Section">
                                                                 <rect key="frame" x="0.0" y="670.333333" width="361" height="141.333333"/>

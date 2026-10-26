@@ -1,3 +1,5 @@
+// Created by Andrew Lee for Transaction History table cells. Feel free to move the code/adjust as needed, only an initial implementation.
+
 import UIKit
 
 class TransactionCell: UITableViewCell {

@@ -282,7 +282,8 @@
                                                             <constraint firstItem="L8C-hZ-uKv" firstAttribute="top" secondItem="SpS-qt-XYZ" secondAttribute="bottom" constant="10" id="Rb9-Ly-c6E"/>
                                                             <constraint firstItem="L8C-hZ-uKv" firstAttribute="leading" secondItem="vMq-Nh-MaX" secondAttribute="leading" constant="16" id="iM3-Wq-X8a"/>
                                                             <constraint firstAttribute="trailing" secondItem="L8C-hZ-uKv" secondAttribute="trailing" constant="16" id="Fo5-Cn-p2Y"/>
-                                                            <constraint firstAttribute="bottom" secondItem="L8C-hZ-uKv" secondAttribute="bottom" constant="16" id="Vh7-Ae-J4s"/>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L8C-hZ-uKv" secondAttribute="bottom" constant="16" id="Vh7-Ae-J4s"/>
+                                                            <constraint firstAttribute="bottom" secondItem="L8C-hZ-uKv" secondAttribute="bottom" priority="200" constant="16" id="jdT-G5-6NK"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -433,7 +434,8 @@
                                                             <constraint firstItem="eP7-Nb-4Yt" firstAttribute="top" secondItem="psc-Km-hwE" secondAttribute="bottom" constant="12" id="Ww8-Ej-m4R"/>
                                                             <constraint firstItem="eP7-Nb-4Yt" firstAttribute="leading" secondItem="hmb-q8-czx" secondAttribute="leading" constant="12" id="Gt2-Lo-y9V"/>
                                                             <constraint firstAttribute="trailing" secondItem="eP7-Nb-4Yt" secondAttribute="trailing" constant="12" id="nQ6-Ba-K3i"/>
-                                                            <constraint firstAttribute="bottom" secondItem="eP7-Nb-4Yt" secondAttribute="bottom" constant="16" id="Pz0-Hd-e8U"/>
+                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eP7-Nb-4Yt" secondAttribute="bottom" constant="16" id="Pz0-Hd-e8U"/>
+                                                            <constraint firstAttribute="bottom" secondItem="eP7-Nb-4Yt" secondAttribute="bottom" priority="200" constant="16" id="wu5-mj-fo2"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -450,7 +452,7 @@
                                                         <exclude reference="Mf2-Ro-c9T"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="widthClass=regular" axis="horizontal" alignment="top" spacing="16">
+                                                <variation key="widthClass=regular" axis="horizontal" spacing="16">
                                                     <mask key="constraints">
                                                         <include reference="Mf2-Ro-c9T"/>
                                                     </mask>
