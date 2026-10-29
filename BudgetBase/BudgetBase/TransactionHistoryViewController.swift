@@ -20,7 +20,8 @@ class TransactionHistoryViewController: UIViewController, UITableViewDataSource,
             Transaction(isIncome: false, amount: 500.00, date: makeDate(2026, 9, 6), category: "Bills", description: "Rent", notes: nil),
             Transaction(isIncome: false, amount: 434.21, date: makeDate(2025, 12, 30), category: "Entertainment/Leisure", description: "Dining Out", notes: "Diningout related transaction"),
             Transaction(isIncome: false, amount: 131.56, date: makeDate(2025, 12, 28), category: "Bills", description: "Utilities", notes: "Utilities related transaction"),
-            Transaction(isIncome: false, amount: 207.32, date: makeDate(2025, 12, 24), category: "Food", description: "Groceries", notes: "Groceries related transaction")
+            Transaction(isIncome: false, amount: 207.32, date: makeDate(2025, 12, 24), category: "Food", description: "Groceries", notes: "Groceries related transaction"),
+            Transaction(isIncome: true, amount: 3020.67, date: makeDate(2025, 9, 30), category: "Salary", description: "Monthly Paycheck", notes: "Paycheck came in from work. Salary for the month.")
         ]
     }
 
